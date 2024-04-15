@@ -370,4 +370,9 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
     </socket-binding-group>
+    <deployments>
+        <deployment name="Valorant-1.0-SNAPSHOT.war" runtime-name="Valorant-1.0-SNAPSHOT.war">
+            <fs-exploded path="C:\Users\Talha\IdeaProjects\valorant\target\Valorant-1.0-SNAPSHOT"/>
+        </deployment>
+    </deployments>
 </server>

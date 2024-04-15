@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<h:body>
+
+
+
+    <h:form>
+        <p:dataScroller widgetVar="ds" value="#{dataScrollerView.matches.history}" var="match">
+                <div class="match" style="background-color: #1FA490">
+                    <div class="match-list-item p-5">
+                        <img src="https://media.valorant-api.com/maps/#{dataScrollerView.getmapUUID(match.matchDetailsResponse.matchInfo.mapId)}/listviewicon.png" alt=""/>
+                        <br/>
+                        #{match.matchID}
+                        <br/>
+                        #{match.matchDetailsResponse.matchInfo.mapId}
+                        <br/>
+                        <div class="match-list-detail">
+                            <div class="match-name">#{match.gameStartTime}</div>
+                            <div class="match-description"></div>
+                        </div>
+                    </div>
+                </div>
+        </p:dataScroller>
+
+
+        <p:commandButton value="more" styleClass="mt-3" action="#{dataScrollerView.returnToSearch()}" />
+
+    </h:form>
+
+</h:body>
+</html>

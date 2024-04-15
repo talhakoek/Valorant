@@ -1,31 +1,64 @@
 package com.talhakoek.valorant;
 
-
-
-
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.talhakoek.valorant.api.ApiException;
 import com.talhakoek.valorant.api.DefaultApi;
-import com.talhakoek.valorant.model.V1Account;
-import com.talhakoek.valorant.model.V1AccountData;
+import com.talhakoek.valorant.model.*;
+import com.talhakoek.valorant.models.MapsResponse;
+import com.talhakoek.valorant.models.MatchHistoryResponse;
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.faces.context.FacesContext;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
+import java.io.IOException;
+import java.io.Serializable;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.List;
+
 @Named
 @ApplicationScoped
-public class PlayerHistory {
+public class PlayerHistory implements Serializable{
 
     @Inject
     @RestClient
-
     DefaultApi defaultApi;
+
     V1Account v1Account = new V1Account();
 
+    V1LifetimeMatches v1LifetimeMatches = new V1LifetimeMatches();
+    V1AccountData v1AccountData = new V1AccountData();
+
+
+    private String name;
+    private String puuid;
+    private boolean force=false;
+
+
     public String nameTagtoPUUID() throws ApiException {
-        v1Account=defaultApi.valorantV1AccountNameTagGet(name,tag,force);
-        puuid = v1Account.getData().getPuuid();
-        return "index?faces-redirect=true";
+        if (name.contains("#")){
+        v1Account=defaultApi.valorantV1AccountNameTagGet(name.substring(0,name.indexOf('#')),name.substring(name.indexOf('#')),force);
+        v1AccountData = v1Account.getData();
+
+        FacesContext.getCurrentInstance().getExternalContext().getFlash().put("puuid", v1AccountData.getPuuid());
+
+        return "matches.xhtml?faces-redirect=true";
+        }
+
+        return "";
+    }
+
+    public V1LifetimeMatches getV1LifetimeMatches() {
+        return v1LifetimeMatches;
+    }
+
+    public void setV1LifetimeMatches(V1LifetimeMatches v1LifetimeMatches) {
+        this.v1LifetimeMatches = v1LifetimeMatches;
     }
 
     public String getName() {
@@ -36,14 +69,6 @@ public class PlayerHistory {
         this.name = name;
     }
 
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
     public String getPuuid() {
         return puuid;
     }
@@ -51,12 +76,29 @@ public class PlayerHistory {
     public void setPuuid(String puuid) {
         this.puuid = puuid;
     }
-    private String name;
-    private String tag;
-    private String puuid;
-    private boolean force=false;
 
+    public V1AccountData getV1AccountData() {
+        return v1AccountData;
+    }
 
+    public void setV1AccountData(V1AccountData v1AccountData) {
+        this.v1AccountData = v1AccountData;
+    }
 
+    public boolean isForce() {
+        return force;
+    }
+
+    public void setForce(boolean force) {
+        this.force = force;
+    }
+
+    public V1Account getV1Account() {
+        return v1Account;
+    }
+
+    public void setV1Account(V1Account v1Account) {
+        this.v1Account = v1Account;
+    }
 
 }
