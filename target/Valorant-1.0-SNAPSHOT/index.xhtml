@@ -15,15 +15,14 @@
    <div class="card">
       <h:form>
          <h5 class="mt-0">Player History</h5>
-         <h:panelGrid columns="2" cellpadding="7">
-            <p:outputLabel for="name" value="Name"/>
+         <h:panelGrid columns="3" cellpadding="7">
             <p:inputText id="name" value="#{playerHistory.name}"/>
-            <p:outputLabel for="tag" value="Tag"/>
-            <p:inputText id="tag" value="#{playerHistory.tag}"/>
-            <h:outputText id="display" value="#{playerHistory.puuid}"/>
+            <p:commandButton value="Search" styleClass="mt-3" action="#{playerHistory.nameTagtoPUUID()}" />
+
+            <h:outputText id="puuid" value="#{playerHistory.v1AccountData.puuid}"/>
 
          </h:panelGrid>
-         <p:commandButton value="Submit" update="display" styleClass="mt-3" action="#{playerHistory.nameTagtoPUUID()}" />
       </h:form>
-   </div></h:body>
+   </div>
+</h:body>
 </html>
