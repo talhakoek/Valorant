@@ -142,6 +142,7 @@ com\talhakoek\valorant\models\AdaptiveBots.class
 com\talhakoek\valorant\model\InlineResponse200Acts.class
 com\talhakoek\valorant\DataScrollerView.class
 com\talhakoek\valorant\models\MatchHistoryResponse.class
+com\talhakoek\valorant\models\MatchResults.class
 com\talhakoek\valorant\models\DefendBombSite.class
 com\talhakoek\valorant\model\V1LifetimeMmrHistoryItem.class
 com\talhakoek\valorant\model\V1mmrDataImages.class

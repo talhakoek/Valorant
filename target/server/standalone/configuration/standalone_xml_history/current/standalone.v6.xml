@@ -372,7 +372,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="Valorant-1.0-SNAPSHOT.war" runtime-name="Valorant-1.0-SNAPSHOT.war">
-            <fs-exploded path="C:\Users\Talha\IdeaProjects\valorant\target\Valorant-1.0-SNAPSHOT"/>
+            <fs-exploded path="C:\Users\user\IdeaProjects\Valorant\target\Valorant-1.0-SNAPSHOT"/>
         </deployment>
     </deployments>
 </server>

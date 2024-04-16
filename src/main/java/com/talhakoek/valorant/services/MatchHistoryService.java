@@ -1,6 +1,7 @@
 package com.talhakoek.valorant.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.talhakoek.valorant.PlayerHistory;
 import com.talhakoek.valorant.models.MatchHistoryResponse;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
@@ -30,23 +31,20 @@ public class MatchHistoryService {
     );*/
 
     @Inject
+    PlayerHistory playerHistory;
+    @Inject
     private MatchDetailsService service;
 
+
     public MatchHistoryResponse getMatchHistory(String PUUID) throws IOException, InterruptedException {
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://pd.eu.a.pvp.net/match-history/v1/history/"+PUUID))
-                .header("X-Riot-Entitlements-JWT", "REMOVED")
-                .header("Authorization", "REMOVED")
-                .method("GET", HttpRequest.BodyPublishers.noBody())
-                .build();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://pd.eu.a.pvp.net/match-history/v1/history/" + PUUID)).header("X-Riot-Entitlements-JWT", playerHistory.getX_Riot_Entitlements_JWT()).header("Authorization", playerHistory.getAuthorization()).method("GET", HttpRequest.BodyPublishers.noBody()).build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
 
         ObjectMapper mapper = new ObjectMapper();
         try {
-            MatchHistoryResponse matchHistoryResponse  = mapper.readValue(response.body(), MatchHistoryResponse.class);
+            MatchHistoryResponse matchHistoryResponse = mapper.readValue(response.body(), MatchHistoryResponse.class);
 
             for (int i = 0; i < matchHistoryResponse.getHistory().size(); i++) {
-                System.out.println(service.getMatchDetails(matchHistoryResponse.getHistory().get(i).getMatchID()).getMatchInfo().getMapId());
                 matchHistoryResponse.getHistory().get(i).setMatchDetailsResponse(service.getMatchDetails(matchHistoryResponse.getHistory().get(i).getMatchID()));
             }
 

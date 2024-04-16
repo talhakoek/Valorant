@@ -23,11 +23,16 @@ import java.util.List;
 
 @Named
 @ApplicationScoped
-public class PlayerHistory implements Serializable{
+public class PlayerHistory implements Serializable {
 
     @Inject
     @RestClient
     DefaultApi defaultApi;
+    /*
+    String X_Riot_Entitlements_JWT="";
+    String Authorization="";
+    */ String X_Riot_Entitlements_JWT = "REMOVED";
+    String Authorization = "REMOVED";
 
     V1Account v1Account = new V1Account();
 
@@ -37,17 +42,17 @@ public class PlayerHistory implements Serializable{
 
     private String name;
     private String puuid;
-    private boolean force=false;
+    private boolean force = false;
 
 
     public String nameTagtoPUUID() throws ApiException {
-        if (name.contains("#")){
-        v1Account=defaultApi.valorantV1AccountNameTagGet(name.substring(0,name.indexOf('#')),name.substring(name.indexOf('#')),force);
-        v1AccountData = v1Account.getData();
+        if (name.contains("#")) {
+            v1Account = defaultApi.valorantV1AccountNameTagGet(name.substring(0, name.indexOf('#')), name.substring(name.indexOf('#')), force);
+            v1AccountData = v1Account.getData();
 
-        FacesContext.getCurrentInstance().getExternalContext().getFlash().put("puuid", v1AccountData.getPuuid());
+            FacesContext.getCurrentInstance().getExternalContext().getFlash().put("puuid", v1AccountData.getPuuid());
 
-        return "matches.xhtml?faces-redirect=true";
+            return "matches.xhtml?faces-redirect=true";
         }
 
         return "";
@@ -101,4 +106,19 @@ public class PlayerHistory implements Serializable{
         this.v1Account = v1Account;
     }
 
+    public String getX_Riot_Entitlements_JWT() {
+        return X_Riot_Entitlements_JWT;
+    }
+
+    public void setX_Riot_Entitlements_JWT(String x_Riot_Entitlements_JWT) {
+        X_Riot_Entitlements_JWT = x_Riot_Entitlements_JWT;
+    }
+
+    public String getAuthorization() {
+        return Authorization;
+    }
+
+    public void setAuthorization(String authorization) {
+        Authorization = authorization;
+    }
 }
