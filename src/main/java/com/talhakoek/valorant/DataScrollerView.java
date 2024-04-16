@@ -43,7 +43,8 @@ public class DataScrollerView implements Serializable {
 
     @Inject
     private MatchHistoryService service;
-
+    @Inject
+    PlayerHistory playerHistory;
     @PostConstruct
     public void init() {
 
@@ -90,9 +91,10 @@ public class DataScrollerView implements Serializable {
     }
 
     public String getmapUUID(String mapid) throws ApiException, IOException, InterruptedException {
+        System.out.println(playerHistory.getPuuid());
+
         for (int i = 0; i < mapsResponse.getData().size(); i++) {
             if (mapsResponse.getData().get(i).getMapUrl().compareTo(mapid) == 0){
-                System.out.println(mapid+" "+mapsResponse.getData().get(i).getUuid());
                 return mapsResponse.getData().get(i).getUuid();
             }
         }

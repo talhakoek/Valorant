@@ -6,7 +6,18 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
+
+
 <h:head>
+    <h:outputStylesheet>
+        .highlight {
+            background-color: #1FA490;
+        }
+        .normal {
+            background-color: red;
+        }
+
+    </h:outputStylesheet>
 </h:head>
 <h:body>
 
@@ -14,11 +25,11 @@
 
     <h:form>
         <p:dataScroller widgetVar="ds" value="#{dataScrollerView.matches.history}" var="match">
-                <div class="match" style="background-color: #1FA490">
+                <div class="match" style="background-color: highlight">
                     <div class="match-list-item p-5">
                         <img src="https://media.valorant-api.com/maps/#{dataScrollerView.getmapUUID(match.matchDetailsResponse.matchInfo.mapId)}/listviewicon.png" alt=""/>
                         <br/>
-                        #{match.matchID}
+                        #{match.matchDetailsResponse.matchInfo.matchId}
                         <br/>
                         #{match.matchDetailsResponse.matchInfo.mapId}
                         <br/>
