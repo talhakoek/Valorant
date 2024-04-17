@@ -90,4 +90,5 @@ public class MatchDetailsResponse {
     public void setResults(MatchResults results) {
         this.results = results;
     }
+
 }

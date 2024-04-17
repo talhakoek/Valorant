@@ -75,4 +75,13 @@ public class Matches{
     public void setAFKPenalty(int aFKPenalty) {
         this.aFKPenalty = aFKPenalty; }
     int aFKPenalty;
+     MatchDetailsResponse matchDetailsResponse;
+
+    public MatchDetailsResponse getMatchDetailsResponse() {
+        return matchDetailsResponse;
+    }
+
+    public void setMatchDetailsResponse(MatchDetailsResponse matchDetailsResponse) {
+        this.matchDetailsResponse = matchDetailsResponse;
+    }
 }

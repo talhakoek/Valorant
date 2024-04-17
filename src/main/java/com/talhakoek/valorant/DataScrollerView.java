@@ -2,6 +2,7 @@ package com.talhakoek.valorant;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.talhakoek.valorant.api.ApiException;
+import com.talhakoek.valorant.models.CompetitiveUpdates;
 import com.talhakoek.valorant.models.CurrentRank;
 import com.talhakoek.valorant.models.MapsResponse;
 import com.talhakoek.valorant.models.MatchHistoryResponse;
@@ -28,11 +29,11 @@ public class DataScrollerView implements Serializable {
     int start = 0;
     int end = 20;
 
-    public MatchHistoryResponse getMatches() {
+    public CompetitiveUpdates getMatches() {
         return matches;
     }
 
-    public void setMatches(MatchHistoryResponse matches) {
+    public void setMatches(CompetitiveUpdates matches) {
         this.matches = matches;
     }
 
@@ -40,7 +41,7 @@ public class DataScrollerView implements Serializable {
         return (String) FacesContext.getCurrentInstance().getExternalContext().getFlash().get("puuid");
     }
 
-    private MatchHistoryResponse matches;
+    private CompetitiveUpdates matches;
     MapsResponse mapsResponse;
 
     @Inject
@@ -84,10 +85,6 @@ public class DataScrollerView implements Serializable {
         }
     }
 
-
-    public MatchHistoryResponse getProducts() {
-        return matches;
-    }
 
     public void setService(MatchHistoryService service) {
         this.service = service;

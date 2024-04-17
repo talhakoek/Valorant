@@ -23,5 +23,6 @@ public class CompetitiveUpdates {
     public void setMatches(ArrayList<Matches> matches) {
         this.matches = matches; }
     ArrayList<Matches> matches;
+
 }
 
