@@ -2,10 +2,10 @@ standalone.conf.bat
 2b3f191c994483f6eef02750dd454cd081a6d691
 common.ps1
 e7e9e504947701bae8b0bc5fe9411ef6a14754cd
-installation-manager.ps1
-1422a3f3163523c495794238d46421ace73acfcc
 standalone.ps1
 6e1f68fef7203212d8df61c2da557471dcd80514
+installation-manager.ps1
+1422a3f3163523c495794238d46421ace73acfcc
 wildfly-elytron-tool.jar
 505f0a32874fabf7e5705349ec53c22f5ffe1cba
 installation-manager.properties

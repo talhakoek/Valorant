@@ -10,11 +10,12 @@
 
 <h:head>
     <h:outputStylesheet>
-        .highlight {
-            background-color: #1FA490;
+        .won {
+            background-color: #6092A1;
         }
-        .normal {
-            background-color: red;
+
+        .lost {
+            background-color: #A25F78;
         }
 
     </h:outputStylesheet>
@@ -22,27 +23,26 @@
 <h:body>
 
 
-
     <h:form>
         <p:dataScroller widgetVar="ds" value="#{dataScrollerView.matches.history}" var="match">
-                <div class="match" style="background-color: highlight">
-                    <div class="match-list-item p-5">
-                        <img src="https://media.valorant-api.com/maps/#{dataScrollerView.getmapUUID(match.matchDetailsResponse.matchInfo.mapId)}/listviewicon.png" alt=""/>
-                        <br/>
-                        #{match.matchDetailsResponse.matchInfo.matchId}
-                        <br/>
-                        #{match.matchDetailsResponse.matchInfo.mapId}
-                        <br/>
-                        <div class="match-list-detail">
-                            <div class="match-name">#{match.gameStartTime}</div>
-                            <div class="match-description"></div>
-                        </div>
-                    </div>
+            <div class="match #{match.matchDetailsResponse.results.getWon() ? 'won' : 'lost'}">
+                <div class="match-list-item p-5">
+                    <img src="https://media.valorant-api.com/agents/#{match.matchDetailsResponse.results.agentID}/displayicon.png" alt="" height="100px"/>
+                    <img src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{match.matchDetailsResponse.results.competitiveTier != 0 ? match.matchDetailsResponse.results.competitiveTier : '' }/smallicon.png" alt=""/>
+
+                    #{match.matchDetailsResponse.results.score}
+
+                    #{match.matchDetailsResponse.results.kill}/#{match.matchDetailsResponse.results.death}/#{match.matchDetailsResponse.results.assist}
+
+                    #{match.matchDetailsResponse.results.playerScore}
+
+                    <img src="https://media.valorant-api.com/maps/#{dataScrollerView.getmapUUID(match.matchDetailsResponse.matchInfo.mapId)}/listviewicon.png" alt=""/>
                 </div>
+            </div>
         </p:dataScroller>
 
 
-        <p:commandButton value="more" styleClass="mt-3" action="#{dataScrollerView.returnToSearch()}" />
+        <p:commandButton value="more" styleClass="mt-3" action="#{dataScrollerView.returnToSearch()}"/>
 
     </h:form>
 

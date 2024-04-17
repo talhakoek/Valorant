@@ -88,7 +88,16 @@
             <artifactId>okhttp</artifactId>
             <version>4.9.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>io.smallrye.reactive</groupId>
+            <artifactId>smallrye-mutiny-vertx-core</artifactId>
+            <version>3.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.asynchttpclient</groupId>
+            <artifactId>async-http-client</artifactId>
+            <version>2.2.0</version>
+        </dependency>
     </dependencies>
 
   <build>
@@ -103,6 +112,10 @@
             <artifactId>wildfly-maven-plugin</artifactId>
             <version>4.2.0.Final</version>
             <configuration>
+                <hostname>127.0.0.1</hostname> <!-- Default is localhost -->
+                <port>9990</port> <!-- Default management port -->
+                <username>admin</username>
+                <password>admin</password>
                 <feature-packs>
                     <feature-pack>
                         <!--  Latest released version  -->

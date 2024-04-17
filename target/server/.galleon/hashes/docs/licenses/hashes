@@ -1,27 +1,27 @@
-fsf all permissive license.html
-fcf4e258a3d90869c3a2e7fc55154559318b8eb4
 wildfly-ee-feature-pack-licenses.xml
 e1110b645973195348083d1c2fc387b3fd4fbbae
+fsf all permissive license.html
+fcf4e258a3d90869c3a2e7fc55154559318b8eb4
 gnu lesser general public license v2.1 or later.txt
 46dee26f31cce329fa13eacb74f8ac5e52723380
 creative commons attribution 2.5.html
 a3f15d06f44729420d7ab2d87ca9bee7cf2820fe
 mit-0.html
 50ac12745b7d3674089f3dc1cf326ee0365ef249
-mit license.txt
-19eff4fc59155a9343582148816eeb9ffb244279
 MIT_CONTRIBUTORS.txt
 c40dbd2dbcd064fd5e2e6e48e2c986ed9db9f1f1
-eclipse public license 1.0.txt
-77a188d578cd71a45134542ea192f93064d1ebf1
+mit license.txt
+19eff4fc59155a9343582148816eeb9ffb244279
 gnu lesser general public license v3.0 or later.txt
 e7d563f52bf5295e6dba1d67ac23e9f6a160fab9
+eclipse public license 1.0.txt
+77a188d578cd71a45134542ea192f93064d1ebf1
 gnu library general public license v2 only.txt
 44f7289042b71631acac29b2f143330d2da2479e
-common public license 1.0.txt
-7cdb9c36e1d419e07f88628cd016c0481796b89e
 gnu lesser general public license v3.0 only.txt
 e7d563f52bf5295e6dba1d67ac23e9f6a160fab9
+common public license 1.0.txt
+7cdb9c36e1d419e07f88628cd016c0481796b89e
 wildfly-ee-feature-pack-licenses.html
 178c3fc55d44084400e545cdccaadad493aac423
 bsd 3-clause new or revised license.html
