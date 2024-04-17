@@ -23,6 +23,8 @@ import java.util.List;
 @ApplicationScoped
 public class MatchDetailsService {
 
+    List<Maps>
+
     @Inject
     PlayerHistory playerHistory;
 
