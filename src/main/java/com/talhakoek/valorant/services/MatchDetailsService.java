@@ -62,17 +62,17 @@ public class MatchDetailsService {
             case "Red":
                 result.setWon(matchDetailsResponse.getTeams().get(0).getWon());
                 if (result.getWon()) {
-                    result.setScore(matchDetailsResponse.getTeams().get(0).getRoundsWon() + "-" + matchDetailsResponse.getTeams().get(1).getRoundsWon());
+                    result.setScore(matchDetailsResponse.getTeams().get(0).getNumPoints() + "-" + matchDetailsResponse.getTeams().get(1).getNumPoints());
                 } else {
-                    result.setScore(matchDetailsResponse.getTeams().get(0).getRoundsWon() + "-" + matchDetailsResponse.getTeams().get(1).getRoundsWon());
+                    result.setScore(matchDetailsResponse.getTeams().get(0).getNumPoints() + "-" + matchDetailsResponse.getTeams().get(1).getNumPoints());
                 }
                 break;
             case "Blue":
                 result.setWon(matchDetailsResponse.getTeams().get(1).getWon());
                 if (result.getWon()) {
-                    result.setScore(matchDetailsResponse.getTeams().get(1).getRoundsWon() + "-" + matchDetailsResponse.getTeams().get(0).getRoundsWon());
+                    result.setScore(matchDetailsResponse.getTeams().get(1).getNumPoints() + "-" + matchDetailsResponse.getTeams().get(0).getNumPoints());
                 } else {
-                    result.setScore(matchDetailsResponse.getTeams().get(1).getRoundsWon() + "-" + matchDetailsResponse.getTeams().get(0).getRoundsWon());
+                    result.setScore(matchDetailsResponse.getTeams().get(1).getNumPoints() + "-" + matchDetailsResponse.getTeams().get(0).getNumPoints());
                 }
                 break;
         }
