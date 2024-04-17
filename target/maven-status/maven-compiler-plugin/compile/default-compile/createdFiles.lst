@@ -82,6 +82,7 @@ com/talhakoek/valorant/model/V1mmrhMap.class
 com/talhakoek/valorant/models/NewPlayerExperienceDetails.class
 com/talhakoek/valorant/model/InlineResponse2005Data.class
 com/talhakoek/valorant/model/Regions.class
+com/talhakoek/valorant/models/CurrentRank.class
 com/talhakoek/valorant/model/MatchDefuseEvents.class
 com/talhakoek/valorant/models/MatchHistoryResponse.class
 com/talhakoek/valorant/model/V1LifetimeMatchesItemStatsShots.class
@@ -161,6 +162,7 @@ com/talhakoek/valorant/model/InlineResponse2005.class
 com/talhakoek/valorant/models/Damage.class
 com/talhakoek/valorant/model/V1mmrData.class
 com/talhakoek/valorant/model/V1PartialPremierTeam.class
+com/talhakoek/valorant/models/CompetitiveUpdates.class
 com/talhakoek/valorant/model/PlayerEconomyLoadoutValue.class
 com/talhakoek/valorant/api/ApiException.class
 com/talhakoek/valorant/model/V1LifetimeMatchesItemMetaSeason.class
@@ -197,6 +199,7 @@ com/talhakoek/valorant/model/V2storeoffer$TypeEnum$Deserializer.class
 com/talhakoek/valorant/model/V1esportscheduleitem.class
 com/talhakoek/valorant/model/V1storefeaturedData.class
 com/talhakoek/valorant/model/PremierSeasonsEventTypes.class
+com/talhakoek/valorant/models/Matches.class
 com/talhakoek/valorant/model/ModesApi.class
 com/talhakoek/valorant/model/PlayerStats.class
 com/talhakoek/valorant/models/XpModification.class
