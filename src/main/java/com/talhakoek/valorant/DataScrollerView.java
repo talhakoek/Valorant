@@ -70,7 +70,6 @@ public class DataScrollerView implements Serializable {
             // Log or handle initialization error
             e.printStackTrace();
         }
-        System.out.println("Total execution time : " + (System.currentTimeMillis()-start));
     }
 
 
