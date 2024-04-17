@@ -34,7 +34,7 @@ public class MatchDetailsService {
             new GameModes("/Game/GameModes/QuickBomb/QuickBombGameMode.QuickBombGameMode_C","E921D1E6-416B-C31F-1291-74930C330B7B"),
             new GameModes("/Game/GameModes/ShootingRange/ShootingRangeGameMode.ShootingRangeGameMode_C","E2DC3878-4FE5-D132-28F8-3D8C259EFCC6"),
             new GameModes("/Game/GameModes/SnowballFight/SnowballFightGameMode.SnowballFightGameMode_C","57038D6D-49B1-3A74-C5EF-3395D9F23A97"),
-            new GameModes("/Game/GameModes/_Development/Swiftplay_EndOfRoundCredits/Swiftplay_EoRCredits_GameMode.Swiftplay_EoRCredits_GameMode_C","57038D6D-49B1-3A74-C5EF-3395D9F23A97"));
+            new GameModes("/Game/GameModes/_Development/Swiftplay_EndOfRoundCredits/Swiftplay_EoRCredits_GameMode.Swiftplay_EoRCredits_GameMode_C","5D0F264B-4EBE-CC63-C147-809E1374484B"));
 
     @Inject
     PlayerHistory playerHistory;
