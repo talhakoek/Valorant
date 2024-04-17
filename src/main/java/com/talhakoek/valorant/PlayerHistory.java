@@ -31,9 +31,10 @@ public class PlayerHistory implements Serializable {
     /*
     String X_Riot_Entitlements_JWT="";
     String Authorization="";
-    */ String X_Riot_Entitlements_JWT = "REMOVED";
-    String Authorization = "REMOVED";
+    */
 
+    String X_Riot_Entitlements_JWT="REMOVED";
+    String Authorization="REMOVED";
     V1Account v1Account = new V1Account();
 
     V1LifetimeMatches v1LifetimeMatches = new V1LifetimeMatches();
@@ -49,9 +50,9 @@ public class PlayerHistory implements Serializable {
         if (name.contains("#")) {
             v1Account = defaultApi.valorantV1AccountNameTagGet(name.substring(0, name.indexOf('#')), name.substring(name.indexOf('#')), force);
             v1AccountData = v1Account.getData();
+            puuid=v1AccountData.getPuuid();
 
             FacesContext.getCurrentInstance().getExternalContext().getFlash().put("puuid", v1AccountData.getPuuid());
-
             return "matches.xhtml?faces-redirect=true";
         }
 
