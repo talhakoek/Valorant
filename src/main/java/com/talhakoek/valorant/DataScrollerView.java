@@ -2,6 +2,7 @@ package com.talhakoek.valorant;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.talhakoek.valorant.api.ApiException;
+import com.talhakoek.valorant.models.CurrentRank;
 import com.talhakoek.valorant.models.MapsResponse;
 import com.talhakoek.valorant.models.MatchHistoryResponse;
 import com.talhakoek.valorant.services.MatchDetailsService;
@@ -47,6 +48,16 @@ public class DataScrollerView implements Serializable {
     @Inject
     PlayerHistory playerHistory;
 
+    public CurrentRank getCurrentRank() {
+        return currentRank;
+    }
+
+    public void setCurrentRank(CurrentRank currentRank) {
+        this.currentRank = currentRank;
+    }
+
+    CurrentRank currentRank;
+
     @PostConstruct
     public void init() {
         long start = System.currentTimeMillis();
@@ -59,6 +70,7 @@ public class DataScrollerView implements Serializable {
 
             PUUID = getPUUIDFromFlash();
             if (PUUID != null && !PUUID.isEmpty()) {
+                currentRank = service.getCurrentRank(PUUID);
                 matches = service.getMatchHistory(PUUID);
 
 

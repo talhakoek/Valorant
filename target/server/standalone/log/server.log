@@ -1,8 +1,8 @@
-2024-04-17 20:04:17,713 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.2.Final
-2024-04-17 20:04:18,211 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.2.Final
-2024-04-17 20:04:18,221 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2024-04-17 20:04:18,309 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 31.0.1.Final (WildFly Core 23.0.3.Final) starting
-2024-04-17 20:04:18,311 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+2024-04-17 20:33:48,077 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.2.Final
+2024-04-17 20:33:48,552 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.2.Final
+2024-04-17 20:33:48,560 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-04-17 20:33:48,643 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 31.0.1.Final (WildFly Core 23.0.3.Final) starting
+2024-04-17 20:33:48,644 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
 	[Standalone] = 
 	file.encoding = UTF-8
 	file.separator = /
@@ -72,182 +72,237 @@
 	user.language = en
 	user.name = ubuntu
 	user.timezone = Etc/UTC
-2024-04-17 20:04:18,311 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/ubuntu/IdeaProjects/Valorant/target/server -Djboss.server.base.dir=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone -Djboss.server.log.dir=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/log -Djboss.server.config.dir=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration/logging.properties 
-2024-04-17 20:04:18,987 INFO  [org.wildfly.security] (ServerService Thread Pool -- 16) ELY00001: WildFly Elytron version 2.2.3.Final
-2024-04-17 20:04:19,628 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2024-04-17 20:04:19,640 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.13.Final
-2024-04-17 20:04:19,645 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.13.Final
-2024-04-17 20:04:19,689 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.28.Final
-2024-04-17 20:04:19,706 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 40) WFLYHEALTH0001: Activating Base Health Subsystem
-2024-04-17 20:04:19,712 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
-2024-04-17 20:04:19,730 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 6.2.7.Final
-2024-04-17 20:04:19,722 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
-2024-04-17 20:04:19,762 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.8.Final)
-2024-04-17 20:04:19,768 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
-2024-04-17 20:04:19,774 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 51) WFLYJWT0001: Activating MicroProfile JWT Subsystem
-2024-04-17 20:04:19,778 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (ServerService Thread Pool -- 52) WFLYMPOAI0001: Activating MicroProfile OpenAPI Subsystem
-2024-04-17 20:04:19,777 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 47) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
-2024-04-17 20:04:19,771 INFO  [org.wildfly.extension.microprofile.telemetry] (ServerService Thread Pool -- 53) WFLYMPTEL0001: Activating MicroProfile Telemetry Subsystem
-2024-04-17 20:04:19,786 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
-2024-04-17 20:04:19,773 INFO  [org.wildfly.extension.microprofile.faulttolerance] (ServerService Thread Pool -- 49) WFLYMPFTEXT0001: Activating MicroProfile Fault Tolerance subsystem.
-2024-04-17 20:04:19,781 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 48) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2024-04-17 20:04:19,797 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
-2024-04-17 20:04:19,799 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 59) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2024-04-17 20:04:19,822 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 50) WFLYMPHEALTH0001: Activating MicroProfile Health Subsystem
-2024-04-17 20:04:19,869 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
-2024-04-17 20:04:19,918 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.3.12.Final starting
-2024-04-17 20:04:20,003 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
-2024-04-17 20:04:20,005 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) Queuing requests.
-2024-04-17 20:04:20,006 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
-2024-04-17 20:04:20,019 WARN  [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-5) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
-2024-04-17 20:04:20,079 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2024-04-17 20:04:20,182 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ubuntu/IdeaProjects/Valorant/target/server/standalone/deployments
-2024-04-17 20:04:20,301 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2024-04-17 20:04:20,306 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2024-04-17 20:04:20,307 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
-2024-04-17 20:04:20,309 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 31.0.1.Final (WildFly Core 23.0.3.Final) started in 2897ms - Started 190 of 282 services (132 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
-2024-04-17 20:04:20,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
-2024-04-17 20:04:22,970 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
-2024-04-17 20:04:23,363 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
-2024-04-17 20:04:23,364 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
-2024-04-17 20:04:23,408 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
-2024-04-17 20:04:23,612 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 8.0.1.Final
-2024-04-17 20:04:24,003 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-8) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
-2024-04-17 20:04:24,026 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 5.1.2 (Final)
-2024-04-17 20:04:24,942 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 29) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
-2024-04-17 20:04:24,942 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-7) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:04:25,736 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 29) Running on PrimeFaces 12.0.0
-2024-04-17 20:04:25,751 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 29) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
-2024-04-17 20:04:25,796 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "Valorant-1.0-SNAPSHOT.war" (runtime-name : "Valorant-1.0-SNAPSHOT.war")
-2024-04-17 20:04:42,168 SEVERE [jakarta.enterprise.resource.webcontainer.faces.flash] (default task-1) JSF1094: Could not decode flash data from incoming cookie value Invalid characters in decrypted value.  Processing will continue, but the flash is unavailable for this request.
-2024-04-17 20:04:42,724 WARN  [org.jboss.as.weld] (default task-1) WFLYWELD0052: Using deployment classloader to load proxy classes for module org.jboss.resteasy.resteasy-client-microprofile. Package-private access will not work. To fix this the module should declare dependencies on [org.jboss.weld.core, org.jboss.weld.spi, org.jboss.weld.api]
-2024-04-17 20:16:34,250 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-8) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:16:34,255 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 29) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
-2024-04-17 20:16:34,344 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 97ms
-2024-04-17 20:16:34,351 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
-2024-04-17 20:16:36,631 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
-2024-04-17 20:16:36,818 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
-2024-04-17 20:16:36,818 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
-2024-04-17 20:16:36,831 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
-2024-04-17 20:16:37,048 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-7) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
-2024-04-17 20:16:37,409 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-1) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:16:37,415 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 74) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
-2024-04-17 20:16:37,911 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 74) Running on PrimeFaces 12.0.0
-2024-04-17 20:16:37,913 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 74) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
-2024-04-17 20:16:37,934 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
-2024-04-17 20:16:37,937 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 74) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
-2024-04-17 20:16:37,941 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-2) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:16:37,954 SEVERE [jakarta.faces] (default task-1) Unable to obtain InjectionProvider from init time FacesContext. Does this container implement the Mojarra Injection SPI?
-2024-04-17 20:16:37,959 SEVERE [jakarta.faces] (default task-1) Application was not properly initialized at startup, could not find Factory: jakarta.faces.application.ApplicationFactory. Attempting to find backup.
-2024-04-17 20:16:37,961 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /Valorant-1.0-SNAPSHOT/: java.lang.IllegalStateException: Could not find backup for factory jakarta.faces.application.ApplicationFactory. 
-	at jakarta.faces.impl@4.0.5//jakarta.faces.FactoryFinderInstance.notNullFactory(FactoryFinderInstance.java:497)
-	at jakarta.faces.impl@4.0.5//jakarta.faces.FactoryFinderInstance.getFactory(FactoryFinderInstance.java:190)
-	at jakarta.faces.impl@4.0.5//jakarta.faces.FactoryFinder.getFactory(FactoryFinder.java:263)
-	at jakarta.faces.impl@4.0.5//com.sun.faces.context.FacesContextImpl.getApplication(FacesContextImpl.java:143)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.config.PrimeConfiguration.<init>(PrimeConfiguration.java:79)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.context.PrimeApplicationContext.<init>(PrimeApplicationContext.java:88)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.context.PrimeApplicationContext.getCurrentInstance(PrimeApplicationContext.java:240)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.context.PrimeApplicationContext.getCurrentInstance(PrimeApplicationContext.java:228)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.context.PrimeRequestContext.getApplicationContext(PrimeRequestContext.java:212)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.context.PrimeFacesContext.<init>(PrimeFacesContext.java:60)
-	at deployment.Valorant-1.0-SNAPSHOT.war//org.primefaces.context.PrimeFacesContextFactory.getFacesContext(PrimeFacesContextFactory.java:59)
-	at jakarta.faces.impl@4.0.5//com.sun.faces.context.InjectionFacesContextFactory.getFacesContext(InjectionFacesContextFactory.java:86)
-	at jakarta.faces.impl@4.0.5//jakarta.faces.webapp.FacesServlet.acquireFacesContext(FacesServlet.java:532)
-	at jakarta.faces.impl@4.0.5//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:445)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
-	at org.wildfly.security.elytron-base@2.2.3.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
-	at org.wildfly.security.elytron-base@2.2.3.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
-	at org.wildfly.security.elytron-base@2.2.3.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
-	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.core@2.3.12.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.core@2.3.12.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at org.wildfly.security.elytron-web.undertow-server-servlet@4.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
-	at org.jboss.xnio@3.8.13.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-
-2024-04-17 20:16:37,970 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 33ms
-2024-04-17 20:16:37,972 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
-2024-04-17 20:16:37,963 ERROR [io.undertow.request] (default task-1) UT005071: Undertow request failed HttpServerExchange{ GET /Valorant-1.0-SNAPSHOT/}: java.lang.IllegalStateException: UT015023: This Context has been already destroyed
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.spec.ServletContextImpl.getDeploymentInfo(ServletContextImpl.java:210)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.spec.ServletContextImpl.getContextPath(ServletContextImpl.java:216)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.spec.HttpServletRequestImpl.getContextPath(HttpServletRequestImpl.java:310)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletDebugPageHandler.handleRequest(ServletDebugPageHandler.java:107)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:321)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
-	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
-	at io.undertow.core@2.3.12.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
-	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
-	at org.jboss.xnio@3.8.13.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-
-2024-04-17 20:16:39,506 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
-2024-04-17 20:16:39,625 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
-2024-04-17 20:16:39,625 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
-2024-04-17 20:16:39,635 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
-2024-04-17 20:16:39,856 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-6) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
-2024-04-17 20:16:40,027 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-2) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:16:40,033 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 65) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
-2024-04-17 20:16:40,448 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 65) Running on PrimeFaces 12.0.0
-2024-04-17 20:16:40,450 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
-2024-04-17 20:16:40,470 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
-2024-04-17 20:16:40,544 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-4) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:16:40,545 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
-2024-04-17 20:16:40,572 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 28ms
-2024-04-17 20:16:40,573 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
-2024-04-17 20:16:42,144 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
-2024-04-17 20:16:42,261 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
-2024-04-17 20:16:42,261 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
-2024-04-17 20:16:42,272 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
-2024-04-17 20:16:42,436 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-6) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
-2024-04-17 20:16:42,604 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-3) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
-2024-04-17 20:16:42,608 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 67) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
-2024-04-17 20:16:42,987 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 67) Running on PrimeFaces 12.0.0
-2024-04-17 20:16:42,993 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 67) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
-2024-04-17 20:16:43,007 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
-2024-04-17 20:16:44,449 WARN  [org.jboss.weld.Servlet] (default task-1) WELD-000714: HttpContextLifecycle guard leak detected. The Servlet container is not fully compliant. The value was 1
-2024-04-17 20:16:44,479 SEVERE [jakarta.enterprise.resource.webcontainer.faces.flash] (default task-1) JSF1094: Could not decode flash data from incoming cookie value Invalid characters in decrypted value.  Processing will continue, but the flash is unavailable for this request.
-2024-04-17 20:16:44,539 WARN  [org.jboss.as.weld] (default task-1) WFLYWELD0052: Using deployment classloader to load proxy classes for module org.jboss.resteasy.resteasy-client-microprofile. Package-private access will not work. To fix this the module should declare dependencies on [org.jboss.weld.core, org.jboss.weld.spi, org.jboss.weld.api]
+2024-04-17 20:33:48,645 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/ubuntu/IdeaProjects/Valorant/target/server -Djboss.server.base.dir=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone -Djboss.server.log.dir=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/log -Djboss.server.config.dir=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration/logging.properties 
+2024-04-17 20:33:49,306 INFO  [org.wildfly.security] (ServerService Thread Pool -- 15) ELY00001: WildFly Elytron version 2.2.3.Final
+2024-04-17 20:33:49,863 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2024-04-17 20:33:49,875 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.8.13.Final
+2024-04-17 20:33:49,886 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.8.13.Final
+2024-04-17 20:33:49,914 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2024-04-17 20:33:49,918 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2024-04-17 20:33:49,917 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 6.2.7.Final
+2024-04-17 20:33:49,920 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 40) WFLYHEALTH0001: Activating Base Health Subsystem
+2024-04-17 20:33:49,948 INFO  [org.wildfly.extension.microprofile.faulttolerance] (ServerService Thread Pool -- 49) WFLYMPFTEXT0001: Activating MicroProfile Fault Tolerance subsystem.
+2024-04-17 20:33:49,949 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 48) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2024-04-17 20:33:49,957 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.8.Final)
+2024-04-17 20:33:49,961 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 47) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2024-04-17 20:33:49,964 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 51) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2024-04-17 20:33:49,988 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 50) WFLYMPHEALTH0001: Activating MicroProfile Health Subsystem
+2024-04-17 20:33:49,994 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
+2024-04-17 20:33:49,997 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (ServerService Thread Pool -- 52) WFLYMPOAI0001: Activating MicroProfile OpenAPI Subsystem
+2024-04-17 20:33:50,011 INFO  [org.wildfly.extension.microprofile.telemetry] (ServerService Thread Pool -- 53) WFLYMPTEL0001: Activating MicroProfile Telemetry Subsystem
+2024-04-17 20:33:50,014 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 59) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2024-04-17 20:33:50,026 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.28.Final
+2024-04-17 20:33:50,048 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2024-04-17 20:33:50,080 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /home/ubuntu/IdeaProjects/Valorant/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2024-04-17 20:33:50,097 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2024-04-17 20:33:50,161 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.3.12.Final starting
+2024-04-17 20:33:50,227 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2024-04-17 20:33:50,228 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2024-04-17 20:33:50,229 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2024-04-17 20:33:50,205 WARN  [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-5) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2024-04-17 20:33:50,268 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2024-04-17 20:33:50,337 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ubuntu/IdeaProjects/Valorant/target/server/standalone/deployments
+2024-04-17 20:33:50,444 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-04-17 20:33:50,453 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2024-04-17 20:33:50,454 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2024-04-17 20:33:50,455 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 31.0.1.Final (WildFly Core 23.0.3.Final) started in 2661ms - Started 190 of 282 services (132 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2024-04-17 20:33:50,823 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:33:53,222 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2024-04-17 20:33:53,659 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
+2024-04-17 20:33:53,660 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
+2024-04-17 20:33:53,702 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
+2024-04-17 20:33:53,914 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 8.0.1.Final
+2024-04-17 20:33:54,327 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-4) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2024-04-17 20:33:54,355 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 5.1.2 (Final)
+2024-04-17 20:33:55,264 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 62) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
+2024-04-17 20:33:55,272 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-2) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:33:56,149 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 62) Running on PrimeFaces 12.0.0
+2024-04-17 20:33:56,164 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
+2024-04-17 20:33:56,215 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "Valorant-1.0-SNAPSHOT.war" (runtime-name : "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:34:05,461 SEVERE [jakarta.enterprise.resource.webcontainer.faces.flash] (default task-1) JSF1094: Could not decode flash data from incoming cookie value Invalid characters in decrypted value.  Processing will continue, but the flash is unavailable for this request.
+2024-04-17 20:34:06,377 WARN  [org.jboss.as.weld] (default task-1) WFLYWELD0052: Using deployment classloader to load proxy classes for module org.jboss.resteasy.resteasy-client-microprofile. Package-private access will not work. To fix this the module should declare dependencies on [org.jboss.weld.core, org.jboss.weld.spi, org.jboss.weld.api]
+2024-04-17 20:34:11,433 ERROR [stderr] (default task-1) com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "httpStatus" (class com.talhakoek.valorant.models.CompetitiveUpdates), not marked as ignorable (3 known properties: "Version", "Matches", "Subject"])
+2024-04-17 20:34:11,433 ERROR [stderr] (default task-1)  at [Source: (String)"{
+2024-04-17 20:34:11,434 ERROR [stderr] (default task-1)     "httpStatus": 400,
+2024-04-17 20:34:11,434 ERROR [stderr] (default task-1)     "errorCode": "BAD_CLAIMS",
+2024-04-17 20:34:11,434 ERROR [stderr] (default task-1)     "message": "Failure validating/decoding RSO Access Token"
+2024-04-17 20:34:11,434 ERROR [stderr] (default task-1) }"; line: 2, column: 22] (through reference chain: com.talhakoek.valorant.models.CompetitiveUpdates["httpStatus"])
+2024-04-17 20:34:11,434 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+2024-04-17 20:34:11,435 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1138)
+2024-04-17 20:34:11,435 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+2024-04-17 20:34:11,435 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1709)
+2024-04-17 20:34:11,435 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1687)
+2024-04-17 20:34:11,435 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3772)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at com.fasterxml.jackson.core.jackson-databind@2.15.3//com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3740)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at deployment.Valorant-1.0-SNAPSHOT.war//com.talhakoek.valorant.services.MatchHistoryService.getCurrentRank(MatchHistoryService.java:94)
+2024-04-17 20:34:11,436 ERROR [stderr] (default task-1) 	at deployment.Valorant-1.0-SNAPSHOT.war//com.talhakoek.valorant.services.MatchHistoryService$Proxy$_$$_WeldClientProxy.getCurrentRank(Unknown Source)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at deployment.Valorant-1.0-SNAPSHOT.war//com.talhakoek.valorant.DataScrollerView.init(DataScrollerView.java:73)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+2024-04-17 20:34:11,437 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:182)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:706)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.module.web.el.AbstractWeldELResolver.lookup(AbstractWeldELResolver.java:107)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.module.web.el.AbstractWeldELResolver.getValue(AbstractWeldELResolver.java:90)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:139)
+2024-04-17 20:34:11,438 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:164)
+2024-04-17 20:34:11,440 ERROR [stderr] (default task-1) 	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstIdentifier.getValue(AstIdentifier.java:97)
+2024-04-17 20:34:11,440 ERROR [stderr] (default task-1) 	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.getBase(AstValue.java:314)
+2024-04-17 20:34:11,440 ERROR [stderr] (default task-1) 	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.getValue(AstValue.java:140)
+2024-04-17 20:34:11,441 ERROR [stderr] (default task-1) 	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstDeferredExpression.getValue(AstDeferredExpression.java:40)
+2024-04-17 20:34:11,441 ERROR [stderr] (default task-1) 	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstCompositeExpression.getValue(AstCompositeExpression.java:46)
+2024-04-17 20:34:11,441 ERROR [stderr] (default task-1) 	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.ValueExpressionImpl.getValue(ValueExpressionImpl.java:138)
+2024-04-17 20:34:11,442 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.module.web.el.WeldValueExpression.getValue(WeldValueExpression.java:50)
+2024-04-17 20:34:11,443 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:73)
+2024-04-17 20:34:11,443 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:206)
+2024-04-17 20:34:11,443 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:175)
+2024-04-17 20:34:11,443 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIGraphic.getValue(UIGraphic.java:116)
+2024-04-17 20:34:11,443 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponentBase$AttributesMap.get(UIComponentBase.java:1955)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.renderkit.RenderKitUtils.getImageSource(RenderKitUtils.java:1245)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.renderkit.html_basic.ImageRenderer.encodeEnd(ImageRenderer.java:65)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.render.Renderer.encodeChildren(Renderer.java:146)
+2024-04-17 20:34:11,444 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:556)
+2024-04-17 20:34:11,445 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1435)
+2024-04-17 20:34:11,445 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+2024-04-17 20:34:11,445 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+2024-04-17 20:34:11,445 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+2024-04-17 20:34:11,447 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:163)
+2024-04-17 20:34:11,447 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+2024-04-17 20:34:11,447 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+2024-04-17 20:34:11,447 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+2024-04-17 20:34:11,448 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+2024-04-17 20:34:11,448 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+2024-04-17 20:34:11,448 ERROR [stderr] (default task-1) 	at jakarta.faces.impl@4.0.5//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+2024-04-17 20:34:11,449 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+2024-04-17 20:34:11,449 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+2024-04-17 20:34:11,449 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+2024-04-17 20:34:11,450 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2024-04-17 20:34:11,450 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+2024-04-17 20:34:11,451 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.2.3.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+2024-04-17 20:34:11,451 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.2.3.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+2024-04-17 20:34:11,452 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.2.3.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+2024-04-17 20:34:11,452 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@4.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+2024-04-17 20:34:11,453 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+2024-04-17 20:34:11,453 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+2024-04-17 20:34:11,453 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+2024-04-17 20:34:11,454 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2024-04-17 20:34:11,454 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+2024-04-17 20:34:11,454 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+2024-04-17 20:34:11,454 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+2024-04-17 20:34:11,455 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server-servlet@4.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+2024-04-17 20:34:11,455 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2024-04-17 20:34:11,456 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+2024-04-17 20:34:11,456 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2024-04-17 20:34:11,456 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+2024-04-17 20:34:11,457 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+2024-04-17 20:34:11,457 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2024-04-17 20:34:11,458 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+2024-04-17 20:34:11,458 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+2024-04-17 20:34:11,458 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+2024-04-17 20:34:11,459 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+2024-04-17 20:34:11,459 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2024-04-17 20:34:11,459 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
+2024-04-17 20:34:11,459 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
+2024-04-17 20:34:11,459 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
+2024-04-17 20:34:11,460 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@31.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1413)
+2024-04-17 20:34:11,460 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+2024-04-17 20:34:11,461 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.12.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+2024-04-17 20:34:11,461 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
+2024-04-17 20:34:11,462 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.12.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+2024-04-17 20:34:11,462 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2024-04-17 20:34:11,462 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+2024-04-17 20:34:11,463 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2024-04-17 20:34:11,463 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2024-04-17 20:34:11,463 ERROR [stderr] (default task-1) 	at org.jboss.xnio@3.8.13.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+2024-04-17 20:34:11,464 ERROR [stderr] (default task-1) 	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-17 20:34:11,469 WARNING [org.primefaces.component.api.UIData] (default task-1) Unable to automatically determine the `lazy` attribute, fallback to false. Either define the `lazy` attribute on the component or make sure the `value` attribute doesn't resolve to `null`. clientId: j_idt6:j_idt9
+2024-04-17 20:34:36,660 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-4) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:36,662 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
+2024-04-17 20:34:36,732 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 75ms
+2024-04-17 20:34:36,739 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:34:38,779 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2024-04-17 20:34:38,903 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:38,904 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:38,916 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
+2024-04-17 20:34:39,150 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-5) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2024-04-17 20:34:39,426 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 72) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
+2024-04-17 20:34:39,427 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-6) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:39,911 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 72) Running on PrimeFaces 12.0.0
+2024-04-17 20:34:39,913 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
+2024-04-17 20:34:39,940 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
+2024-04-17 20:34:39,991 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-1) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:39,992 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
+2024-04-17 20:34:40,055 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 64ms
+2024-04-17 20:34:40,057 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:34:41,615 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2024-04-17 20:34:41,751 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:41,752 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:41,763 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
+2024-04-17 20:34:42,165 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-3) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2024-04-17 20:34:42,494 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-6) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:42,499 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 77) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
+2024-04-17 20:34:42,860 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 77) Running on PrimeFaces 12.0.0
+2024-04-17 20:34:42,862 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
+2024-04-17 20:34:42,894 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
+2024-04-17 20:34:44,019 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-1) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:44,019 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
+2024-04-17 20:34:44,046 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 28ms
+2024-04-17 20:34:44,048 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:34:45,485 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2024-04-17 20:34:45,622 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:45,622 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:45,632 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
+2024-04-17 20:34:45,820 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-2) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2024-04-17 20:34:46,020 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-8) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:46,026 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 79) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
+2024-04-17 20:34:46,399 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 79) Running on PrimeFaces 12.0.0
+2024-04-17 20:34:46,401 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
+2024-04-17 20:34:46,415 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
+2024-04-17 20:34:50,571 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-6) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:50,575 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
+2024-04-17 20:34:50,600 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 30ms
+2024-04-17 20:34:50,602 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:34:52,047 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2024-04-17 20:34:52,164 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:52,165 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:52,176 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
+2024-04-17 20:34:52,349 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-2) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2024-04-17 20:34:52,480 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-8) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:52,484 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 75) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
+2024-04-17 20:34:52,830 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 75) Running on PrimeFaces 12.0.0
+2024-04-17 20:34:52,832 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
+2024-04-17 20:34:52,842 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
+2024-04-17 20:34:52,892 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-4) WFLYMPOAI0005: Unregistered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:52,895 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0022: Unregistered web context: '/Valorant-1.0-SNAPSHOT' from server 'default-server'
+2024-04-17 20:34:52,912 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment Valorant-1.0-SNAPSHOT.war (runtime-name: Valorant-1.0-SNAPSHOT.war) in 20ms
+2024-04-17 20:34:52,913 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "Valorant-1.0-SNAPSHOT.war" (runtime-name: "Valorant-1.0-SNAPSHOT.war")
+2024-04-17 20:34:54,362 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jaxb-api.jar in /home/ubuntu/IdeaProjects/Valorant/target/Valorant-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2024-04-17 20:34:54,497 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.core") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:54,497 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.Valorant-1.0-SNAPSHOT.war" is using a private module ("org.jboss.weld.spi") which may be changed or removed in future versions without notice.
+2024-04-17 20:34:54,506 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment Valorant-1.0-SNAPSHOT.war
+2024-04-17 20:34:54,691 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-2) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+2024-04-17 20:34:54,851 INFO  [org.wildfly.extension.microprofile.openapi.smallrye] (MSC service thread 1-3) WFLYMPOAI0004: Registered MicroProfile OpenAPI endpoint '/openapi' for host 'default-host'
+2024-04-17 20:34:54,855 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 76) Initializing Mojarra 4.0.5 for context '/Valorant-1.0-SNAPSHOT'
+2024-04-17 20:34:55,165 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 76) Running on PrimeFaces 12.0.0
+2024-04-17 20:34:55,166 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: '/Valorant-1.0-SNAPSHOT' for server 'default-server'
+2024-04-17 20:34:55,176 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "Valorant-1.0-SNAPSHOT.war"
+2024-04-17 20:34:55,915 SEVERE [jakarta.enterprise.resource.webcontainer.faces.flash] (default task-1) JSF1094: Could not decode flash data from incoming cookie value Invalid characters in decrypted value.  Processing will continue, but the flash is unavailable for this request.
+2024-04-17 20:34:55,950 WARN  [org.jboss.as.weld] (default task-1) WFLYWELD0052: Using deployment classloader to load proxy classes for module org.jboss.resteasy.resteasy-client-microprofile. Package-private access will not work. To fix this the module should declare dependencies on [org.jboss.weld.core, org.jboss.weld.spi, org.jboss.weld.api]
