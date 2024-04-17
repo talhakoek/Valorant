@@ -78,6 +78,7 @@
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/InlineResponse2001.java
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/services/MatchDetailsService.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/InlineObject.java
+/home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/GameModes.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1LifetimeMmrHistory.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1LifetimeMatches.java
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/PlatformInfo.java

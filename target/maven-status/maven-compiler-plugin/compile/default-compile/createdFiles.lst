@@ -143,6 +143,7 @@ com/talhakoek/valorant/model/MatchVictimDeathLocation.class
 com/talhakoek/valorant/model/V2storeoffer$TypeEnum$Serializer.class
 com/talhakoek/valorant/models/Datum.class
 com/talhakoek/valorant/model/V1esportschedule.class
+com/talhakoek/valorant/models/GameModes.class
 com/talhakoek/valorant/model/V1esportscheduleitemTournament.class
 com/talhakoek/valorant/model/V1QueueStatusHighSkill.class
 com/talhakoek/valorant/models/FinishingDamage.class
