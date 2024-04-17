@@ -28,8 +28,8 @@
             <div class="match #{match.matchDetailsResponse.results.getWon() ? 'won' : 'lost'}">
                 <div class="match-list-item p-5">
                     <img src="https://media.valorant-api.com/agents/#{match.matchDetailsResponse.results.agentID}/displayicon.png" alt="" height="100px"/>
-                    <img src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{match.matchDetailsResponse.results.competitiveTier != 0 ? match.matchDetailsResponse.results.competitiveTier : '' }/smallicon.png" alt=""/>
-
+                    <h:graphicImage value="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{match.matchDetailsResponse.results.competitiveTier}/smallicon.png" rendered="#{matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}" height="100px"/>
+                    <h:graphicImage value="https://media.valorant-api.com/gamemodes/#{matchDetailsService.getGamemodeUUID(match.matchDetailsResponse.matchInfo.gameMode)}/displayicon.png" rendered="#{!matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}" height="100px"/>
                     #{match.matchDetailsResponse.results.score}
 
                     #{match.matchDetailsResponse.results.kill}/#{match.matchDetailsResponse.results.death}/#{match.matchDetailsResponse.results.assist}

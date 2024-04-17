@@ -2,6 +2,7 @@ package com.talhakoek.valorant.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.talhakoek.valorant.PlayerHistory;
+import com.talhakoek.valorant.models.GameModes;
 import com.talhakoek.valorant.models.MatchDetailsResponse;
 import com.talhakoek.valorant.models.MatchResults;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -23,7 +24,17 @@ import java.util.List;
 @ApplicationScoped
 public class MatchDetailsService {
 
-    List<Maps>
+    List<GameModes> gameModes = Arrays.asList(
+            new GameModes("/Game/GameModes/Bomb/BombGameMode.BombGameMode_C","96BD3920-4F36-D026-2B28-C683EB0BCAC5"),
+            new GameModes("/Game/GameModes/Deathmatch/DeathmatchGameMode.DeathmatchGameMode_C","A8790EC5-4237-F2F0-E93B-08A8E89865B2"),
+            new GameModes("/Game/GameModes/GunGame/GunGameTeamsGameMode.GunGameTeamsGameMode_C","A4ED6518-4741-6DCB-35BD-F884AECDC859"),
+            new GameModes("/Game/GameModes/HURM/HURMGameMode.HURMGameMode_C","E086DB66-47FD-E791-CA81-06A645AC7661"),
+            new GameModes("/Game/GameModes/NewPlayerExperience/NPEGameMode.NPEGameMode_C","D2B4E425-4CAB-8D95-EB26-BB9B444551DC"),
+            new GameModes("/Game/GameModes/OneForAll/OneForAll_GameMode.OneForAll_GameMode_C","4744698A-4513-DC96-9C22-A9AA437E4A58"),
+            new GameModes("/Game/GameModes/QuickBomb/QuickBombGameMode.QuickBombGameMode_C","E921D1E6-416B-C31F-1291-74930C330B7B"),
+            new GameModes("/Game/GameModes/ShootingRange/ShootingRangeGameMode.ShootingRangeGameMode_C","E2DC3878-4FE5-D132-28F8-3D8C259EFCC6"),
+            new GameModes("/Game/GameModes/SnowballFight/SnowballFightGameMode.SnowballFightGameMode_C","57038D6D-49B1-3A74-C5EF-3395D9F23A97"),
+            new GameModes("/Game/GameModes/_Development/Swiftplay_EndOfRoundCredits/Swiftplay_EoRCredits_GameMode.Swiftplay_EoRCredits_GameMode_C","57038D6D-49B1-3A74-C5EF-3395D9F23A97"));
 
     @Inject
     PlayerHistory playerHistory;
@@ -81,5 +92,20 @@ public class MatchDetailsService {
 
 
         return result;
+    }
+
+    public String getGamemodeUUID(String assetpath){
+        for (int i = 0; i < gameModes.size(); i++) {
+            if (gameModes.get(i).getAssetpath().compareTo(assetpath)==0){
+                return gameModes.get(i).getUUID();
+            }
+        }
+        return null;
+    }
+
+    public boolean getIsCompetitive(MatchDetailsResponse matchDetailsResponse){
+        if (matchDetailsResponse.getMatchInfo().getQueueID().compareTo("competitive")==0)
+            return true;
+        return false;
     }
 }
