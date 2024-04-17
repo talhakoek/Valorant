@@ -40,10 +40,11 @@ public class MatchHistoryService {
     PlayerHistory playerHistory;
     @Inject
     private MatchDetailsService service;
-    MatchHistoryResponse matchHistoryResponse;
+    CompetitiveUpdates competitiveUpdates;
 
-    public MatchHistoryResponse getMatchHistory(String PUUID) throws Exception {//+ "?endIndex=1"
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://pd.eu.a.pvp.net/match-history/v1/history/" + PUUID))
+    public CompetitiveUpdates getMatchHistory(String PUUID) throws Exception {
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("https://pd.eu.a.pvp.net/mmr/v1/players/"+PUUID+"/competitiveupdates"))
                 .header("X-Riot-ClientPlatform", "ew0KCSJwbGF0Zm9ybVR5cGUiOiAiUEMiLA0KCSJwbGF0Zm9ybU9TIjogIldpbmRvd3MiLA0KCSJwbGF0Zm9ybU9TVmVyc2lvbiI6ICIxMC4wLjE5MDQyLjEuMjU2LjY0Yml0IiwNCgkicGxhdGZvcm1DaGlwc2V0IjogIlVua25vd24iDQp9")
                 .header("X-Riot-ClientVersion", "release-08.07-shipping-9-2444158")
                 .header("X-Riot-Entitlements-JWT", playerHistory.getX_Riot_Entitlements_JWT())
@@ -52,10 +53,10 @@ public class MatchHistoryService {
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
 
         ObjectMapper mapper = new ObjectMapper();
-        matchHistoryResponse = mapper.readValue(response.body(), MatchHistoryResponse.class);
+        competitiveUpdates = mapper.readValue(response.body(), CompetitiveUpdates.class);
 
 
-        int numThreads = matchHistoryResponse.getHistory().size();
+        int numThreads = competitiveUpdates.getMatches().size();
         ExecutorService executor = Executors.newFixedThreadPool(numThreads); // Creating a thread pool
         CountDownLatch latch = new CountDownLatch(numThreads); // Latch for waiting all threads to complete
 
@@ -63,7 +64,7 @@ public class MatchHistoryService {
             final int index = i;
             executor.submit(() -> {
                 try {
-                    matchHistoryResponse.getHistory().get(index).setMatchDetailsResponse(service.getMatchDetails(matchHistoryResponse.getHistory().get(index).getMatchID()));
+                    competitiveUpdates.getMatches().get(index).setMatchDetailsResponse(service.getMatchDetails(competitiveUpdates.getMatches().get(index).getMatchID()));
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 } finally {
@@ -75,7 +76,7 @@ public class MatchHistoryService {
         latch.await(); // Wait for all threads to finish
         executor.shutdown(); // Shutdown the executor service
 
-        return matchHistoryResponse;
+        return competitiveUpdates;
 
     }
 

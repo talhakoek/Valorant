@@ -51,6 +51,7 @@ public class MatchDetailsService {
         ObjectMapper objectMapper = new ObjectMapper();
         MatchDetailsResponse matchDetailsResponse = objectMapper.readValue(response.body(), MatchDetailsResponse.class);
         matchDetailsResponse.setResults(getResult(matchDetailsResponse));
+        System.out.println(objectMapper.writeValueAsString(matchDetailsResponse));
         return matchDetailsResponse;
     }
 
