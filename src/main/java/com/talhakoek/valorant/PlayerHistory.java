@@ -1,25 +1,19 @@
 package com.talhakoek.valorant;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.talhakoek.valorant.api.ApiException;
 import com.talhakoek.valorant.api.DefaultApi;
 import com.talhakoek.valorant.model.*;
-import com.talhakoek.valorant.models.MapsResponse;
-import com.talhakoek.valorant.models.MatchHistoryResponse;
+import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.context.SessionScoped;
+
+import java.io.*;
+
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.util.List;
+import java.util.Properties;
 
 @Named
 @ApplicationScoped
@@ -33,8 +27,9 @@ public class PlayerHistory implements Serializable {
     String Authorization="";
     */
 
-    String X_Riot_Entitlements_JWT="REMOVED";
-    String Authorization="REMOVED";
+
+    String X_Riot_Entitlements_JWT="";
+    String Authorization="";
     V1Account v1Account = new V1Account();
 
     V1LifetimeMatches v1LifetimeMatches = new V1LifetimeMatches();
@@ -45,6 +40,24 @@ public class PlayerHistory implements Serializable {
     private String puuid;
     private boolean force = false;
 
+
+    @PostConstruct
+    public void init() {
+        try {
+            Properties prop = new Properties();
+            InputStream input = new FileInputStream("config.properties");
+            prop.load(input);
+            X_Riot_Entitlements_JWT = prop.getProperty("X-Riot-Entitlements-JWT");
+            Authorization = prop.getProperty("Authorization");
+            System.out.println(X_Riot_Entitlements_JWT);
+            System.out.println(Authorization);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 
     public String nameTagtoPUUID() throws ApiException {
         if (name.contains("#")) {

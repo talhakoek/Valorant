@@ -9,6 +9,7 @@ import com.talhakoek.valorant.models.MatchHistoryResponse;
 import com.talhakoek.valorant.services.MatchDetailsService;
 import com.talhakoek.valorant.services.MatchHistoryService;
 import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Inject;
@@ -30,18 +31,18 @@ public class DataScrollerView implements Serializable {
     int end = 20;
 
     public CompetitiveUpdates getMatches() {
-        return matches;
+        return competitiveUpdates;
     }
 
-    public void setMatches(CompetitiveUpdates matches) {
-        this.matches = matches;
+    public void setMatches(CompetitiveUpdates competitiveUpdates) {
+        this.competitiveUpdates = competitiveUpdates;
     }
 
     public String getPUUIDFromFlash() {
         return (String) FacesContext.getCurrentInstance().getExternalContext().getFlash().get("puuid");
     }
 
-    private CompetitiveUpdates matches;
+    private CompetitiveUpdates competitiveUpdates;
     MapsResponse mapsResponse;
 
     @Inject
@@ -72,7 +73,8 @@ public class DataScrollerView implements Serializable {
             PUUID = getPUUIDFromFlash();
             if (PUUID != null && !PUUID.isEmpty()) {
                 currentRank = service.getCurrentRank(PUUID);
-                matches = service.getMatchHistory(PUUID);
+                competitiveUpdates = service.getMatchHistory(PUUID);
+                System.out.println(competitiveUpdates.getMatches().get(0).getMatchDetailsResponse()==null);
 
 
             } else {
@@ -93,7 +95,7 @@ public class DataScrollerView implements Serializable {
     public String getmorematches() throws Exception {
         start = end;
         end = end + 20;
-        matches = service.getMatchHistory(PUUID); // "eu",PUUID,Authorization,X_Riot_Entitlements_JWT,start,end
+        competitiveUpdates = service.getMatchHistory(PUUID); // "eu",PUUID,Authorization,X_Riot_Entitlements_JWT,start,end
         return "matches.xhtml?faces-redirect=true";
     }
 

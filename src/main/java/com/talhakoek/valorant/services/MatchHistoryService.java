@@ -23,7 +23,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Named
-@ApplicationScoped
+@RequestScoped
 public class MatchHistoryService {
 
 /*
@@ -75,7 +75,6 @@ public class MatchHistoryService {
 
         latch.await(); // Wait for all threads to finish
         executor.shutdown(); // Shutdown the executor service
-
         return competitiveUpdates;
 
     }
