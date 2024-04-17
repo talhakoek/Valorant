@@ -72,7 +72,6 @@ public class MatchHistoryService {
 
         latch.await(); // Wait for all threads to finish
         executor.shutdown(); // Shutdown the executor service
-        System.out.println(Thread.activeCount());
 
         return matchHistoryResponse;
 
