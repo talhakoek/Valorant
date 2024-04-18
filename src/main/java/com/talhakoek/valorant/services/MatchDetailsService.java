@@ -65,6 +65,7 @@ public class MatchDetailsService {
             System.out.println(e);
         }
         matchDetailsResponse.setResults(getResult(matchDetailsResponse));
+        System.out.println(objectMapper.writeValueAsString(matchDetailsResponse));
         return matchDetailsResponse;
     }
 
@@ -122,5 +123,4 @@ public class MatchDetailsService {
             return true;
         return false;
     }
-
 }
