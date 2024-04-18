@@ -76,6 +76,7 @@
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/PlayerEconomy.java
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/Callout.java
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/MatchDetailsResponse.java
+/home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/RosterInfo.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1esportscheduleitemMatchGameType.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/InlineResponse2001.java
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/services/MatchDetailsService.java
@@ -197,6 +198,7 @@
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1PremierSeasonEvents.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1PremierTeamDataPlacement.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1PremierSeasonMapSelectionMaps.java
+/home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/Member.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1QueueStatusMaxTier.java
 /home/ubuntu/IdeaProjects/Valorant/target/generated-sources/openapi/src/main/java/com/talhakoek/valorant/model/V1PremierConference.java
 /home/ubuntu/IdeaProjects/Valorant/src/main/java/com/talhakoek/valorant/models/FinishingDamage.java

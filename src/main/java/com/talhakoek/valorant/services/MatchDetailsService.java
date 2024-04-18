@@ -1,5 +1,6 @@
 package com.talhakoek.valorant.services;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.talhakoek.valorant.PlayerHistory;
 import com.talhakoek.valorant.models.GameModes;
@@ -11,6 +12,7 @@ import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -39,17 +41,29 @@ public class MatchDetailsService {
     @Inject
     PlayerHistory playerHistory;
 
-    public MatchDetailsResponse getMatchDetails(String matchID) throws Exception {
+    public MatchDetailsResponse getMatchDetails(String matchID) {
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://pd.eu.a.pvp.net/match-details/v1/matches/" + matchID))
                 .header("X-Riot-Entitlements-JWT", playerHistory.getX_Riot_Entitlements_JWT())
                 .header("X-Riot-ClientPlatform", "ew0KCSJwbGF0Zm9ybVR5cGUiOiAiUEMiLA0KCSJwbGF0Zm9ybU9TIjogIldpbmRvd3MiLA0KCSJwbGF0Zm9ybU9TVmVyc2lvbiI6ICIxMC4wLjE5MDQyLjEuMjU2LjY0Yml0IiwNCgkicGxhdGZvcm1DaGlwc2V0IjogIlVua25vd24iDQp9")
                 .header("X-Riot-ClientVersion", "release-08.07-shipping-9-2444158")
                 .header("Authorization", playerHistory.getAuthorization())
                 .method("GET", HttpRequest.BodyPublishers.noBody()).build();
-        HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> response = null;
+        try {
+            response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+        } catch (IOException e) {
+            System.out.println(e);
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
 
         ObjectMapper objectMapper = new ObjectMapper();
-        MatchDetailsResponse matchDetailsResponse = objectMapper.readValue(response.body(), MatchDetailsResponse.class);
+        MatchDetailsResponse matchDetailsResponse = null;
+        try {
+            matchDetailsResponse = objectMapper.readValue(response.body(), MatchDetailsResponse.class);
+        } catch (JsonProcessingException e) {
+            System.out.println(e);
+        }
         matchDetailsResponse.setResults(getResult(matchDetailsResponse));
         System.out.println(objectMapper.writeValueAsString(matchDetailsResponse));
         return matchDetailsResponse;

@@ -45,6 +45,7 @@ com/talhakoek/valorant/model/MatchEconomyArmorAssets.class
 com/talhakoek/valorant/models/PlayerEconomy.class
 com/talhakoek/valorant/model/V1QueueStatusSkillDisparity.class
 com/talhakoek/valorant/models/BasicGunSkill.class
+com/talhakoek/valorant/models/RosterInfo.class
 com/talhakoek/valorant/model/V3matches.class
 com/talhakoek/valorant/model/V1esportscheduleitemMatchGameType.class
 com/talhakoek/valorant/model/Coach.class
@@ -206,6 +207,7 @@ com/talhakoek/valorant/models/XpModification.class
 com/talhakoek/valorant/models/PlantLocation.class
 com/talhakoek/valorant/models/BehaviorFactors.class
 com/talhakoek/valorant/model/V1AccountDataCard.class
+com/talhakoek/valorant/models/Member.class
 com/talhakoek/valorant/model/MatchEconomyArmor.class
 com/talhakoek/valorant/models/DefuseLocation.class
 com/talhakoek/valorant/model/V1esportscheduleitemMatchTeams.class

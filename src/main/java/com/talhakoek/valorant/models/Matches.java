@@ -84,4 +84,6 @@ public class Matches{
     public void setMatchDetailsResponse(MatchDetailsResponse matchDetailsResponse) {
         this.matchDetailsResponse = matchDetailsResponse;
     }
+
+
 }
