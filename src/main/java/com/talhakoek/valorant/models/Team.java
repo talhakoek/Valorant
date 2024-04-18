@@ -33,4 +33,10 @@ public class Team{
     public void setNumPoints(int numPoints) { 
 		 this.numPoints = numPoints; } 
     int numPoints;
+    @JsonProperty("rosterInfo")
+    public RosterInfo getRosterInfo() {
+        return this.rosterInfo; }
+    public void setRosterInfo(RosterInfo rosterInfo) {
+        this.rosterInfo = rosterInfo; }
+    RosterInfo rosterInfo;
 }

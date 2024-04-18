@@ -12,6 +12,7 @@ import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
+import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
@@ -23,7 +24,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 @Named
-@RequestScoped
+@ViewScoped
 public class DataScrollerView implements Serializable {
 
     String PUUID = "";

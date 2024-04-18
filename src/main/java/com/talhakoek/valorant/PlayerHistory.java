@@ -49,8 +49,6 @@ public class PlayerHistory implements Serializable {
             prop.load(input);
             X_Riot_Entitlements_JWT = prop.getProperty("X-Riot-Entitlements-JWT");
             Authorization = prop.getProperty("Authorization");
-            System.out.println(X_Riot_Entitlements_JWT);
-            System.out.println(Authorization);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

@@ -19,20 +19,48 @@
         }
 
     </h:outputStylesheet>
+
+    <title>Pulse</title>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css"/>
 </h:head>
 <h:body>
 
 
     <h:form>
-        <h:graphicImage value="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{dataScrollerView.currentRank.competitiveTier}/largeicon.png"/>
-        #{dataScrollerView.currentRank.rankRating}
+        <div class="flex justify-content-center flex-wrap">
+            <h:graphicImage
+                    value="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{dataScrollerView.currentRank.competitiveTier}/largeicon.png"/>
+        </div>
+        <div class="flex justify-content-center flex-wrap">
+            <p:progressBar styleClass="w-6" value="#{dataScrollerView.currentRank.rankRating}"
+                           displayOnly="true"
+                           rendered="#{100 >= dataScrollerView.currentRank.rankRating ? true: false}"/>
+        </div>
+        <div class="flex justify-content-center flex-wrap">
+
+            <h:outputText value="Rank Rating #{dataScrollerView.currentRank.rankRating}/100"
+                          rendered="#{(100 >= dataScrollerView.currentRank.rankRating) ? true: false}"/>
+
+
+            <h:outputText value="#{dataScrollerView.currentRank.rankRating}"
+                          rendered="#{!(100 >= dataScrollerView.currentRank.rankRating) ? true: false}"/>
+        </div>
+
         <p:dataScroller widgetVar="ds" value="#{dataScrollerView.matches.matches}" var="match">
             <div class="match #{match.matchDetailsResponse.results.getWon() ? 'won' : 'lost'}">
                 <div class="match-list-item p-5">
-                    <img src="https://media.valorant-api.com/agents/#{match.matchDetailsResponse.results.agentID}/displayicon.png" alt="" height="100px"/>
-                    <h:graphicImage value="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{match.matchDetailsResponse.results.competitiveTier}/largeicon.png" rendered="#{matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}" height="100px"/>
-                    <h:graphicImage value="https://media.valorant-api.com/gamemodes/#{matchDetailsService.getGamemodeUUID(match.matchDetailsResponse.matchInfo.gameMode)}/displayicon.png" rendered="#{!matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}" height="100px"/>
-                    <h:outputText value="#{match.rankedRatingEarned}" rendered="#{matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}"/>
+                    <img src="https://media.valorant-api.com/agents/#{match.matchDetailsResponse.results.agentID}/displayicon.png"
+                         alt="" height="100px"/>
+                    <h:graphicImage
+                            value="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/#{match.matchDetailsResponse.results.competitiveTier}/largeicon.png"
+                            rendered="#{matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}"
+                            height="100px"/>
+                    <h:graphicImage
+                            value="https://media.valorant-api.com/gamemodes/#{matchDetailsService.getGamemodeUUID(match.matchDetailsResponse.matchInfo.gameMode)}/displayicon.png"
+                            rendered="#{!matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}"
+                            height="100px"/>
+                    <h:outputText value="#{match.rankedRatingEarned}"
+                                  rendered="#{matchDetailsService.getIsCompetitive(match.matchDetailsResponse) ? true : false}"/>
 
                     #{match.matchDetailsResponse.results.score}
 
@@ -40,7 +68,8 @@
 
                     #{match.matchDetailsResponse.results.playerScore}
 
-                    <img src="https://media.valorant-api.com/maps/#{dataScrollerView.getmapUUID(match.matchDetailsResponse.matchInfo.mapId)}/listviewicon.png" alt=""/>
+                    <img src="https://media.valorant-api.com/maps/#{dataScrollerView.getmapUUID(match.matchDetailsResponse.matchInfo.mapId)}/listviewicon.png"
+                         alt=""/>
                 </div>
             </div>
         </p:dataScroller>
